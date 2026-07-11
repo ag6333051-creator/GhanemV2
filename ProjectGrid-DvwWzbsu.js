@@ -1,0 +1,1 @@
+import{n as e}from"./utils-B3D6xD1T.js";import{t}from"./ProjectCard-BYIsAR_n.js";var n=e();function r({projects:e}){return(0,n.jsx)(`div`,{className:`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`,children:e.map((e,r)=>(0,n.jsx)(`div`,{className:`animate-fade-up`,style:{animationDelay:`${r*60}ms`},children:(0,n.jsx)(t,{project:e})},e.id))})}export{r as t};
