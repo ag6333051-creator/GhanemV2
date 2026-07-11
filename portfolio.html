@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charSet="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+		data-precedence="default" />
+	<link rel="stylesheet" href="assets/styles-CzmBpTmZ.css" data-precedence="default" />
+	<title>Portfolio — Ghanem</title>
+	<meta name="author" content="Ghanem" />
+	<meta property="og:title" content="Ghanem — Creative Visual Artist" />
+	<meta property="og:description"
+		content="Premium portfolio: branding, motion, editorial, video editing and visual art." />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="description" content="Selected work across branding, editorial, motion, video and visual art." />
+	<link rel="modulepreload" href="assets/index-eiRlS7zx.js" />
+	<link rel="modulepreload" href="assets/utils-B3D6xD1T.js" />
+	<link rel="modulepreload" href="assets/portfolio-Bgvk9Hz9.js" />
+	<link rel="modulepreload" href="assets/ProjectCard-BYIsAR_n.js" />
+	<link rel="modulepreload" href="assets/ProjectGrid-DvwWzbsu.js" />
+	<link rel="modulepreload" href="assets/PageHero-CN2HiELr.js" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	    <link rel="icon" href="assets/images/logo design.png" type="image/png" />
+
+	<style>
+		@font-face {
+			font-family: 'CameraPlainVariable';
+			src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+			font-weight: 100 900;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		#lovable-badge {
+			--badge-bg: #1b1b1b;
+			--badge-text: #c5c1b9;
+			--badge-text-hover: #dcdad5;
+			--badge-radius: 6px;
+			--badge-padding: 8px;
+			--badge-gap: 6px;
+			--badge-shadow:
+				0 0 0 1px rgba(0, 0, 0, 0.88),
+				0 1px 0 0 rgba(0, 0, 0, 0.04),
+				0 2px 2px -1px rgba(0, 0, 0, 0.08),
+				0 4px 4px -2px rgba(0, 0, 0, 0.08),
+				0 8px 8px -4px rgba(0, 0, 0, 0.08),
+				0 16px 16px -8px rgba(0, 0, 0, 0.08);
+			--badge-transition-duration: 0.2s;
+			--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+			--focus-color: #575ECF;
+			--focus-offset: 2px;
+			--focus-width: 2px;
+
+			position: fixed;
+			bottom: 12px;
+			right: 12px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			z-index: 1000000;
+			background-color: var(--badge-bg) !important;
+			color: var(--badge-text) !important;
+			border-radius: var(--badge-radius);
+			box-shadow: var(--badge-shadow) !important;
+			font-size: 12px;
+			font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+			font-weight: 400 !important;
+			text-transform: none !important;
+			font-feature-settings: normal !important;
+			transform: translateZ(0);
+			will-change: transform, opacity;
+		}
+
+		#lovable-badge-cta {
+			display: flex;
+			align-items: center;
+			gap: var(--badge-gap);
+			padding: 0 var(--badge-padding);
+			height: 100%;
+			color: inherit;
+			text-decoration: none;
+			white-space: nowrap;
+			border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+			transition:
+				background-color var(--badge-transition-duration) ease,
+				color var(--badge-transition-duration) ease,
+				transform 0.1s ease;
+		}
+
+		#lovable-badge-cta:hover {
+			background: rgba(255, 255, 255, 0.04);
+			color: var(--badge-text-hover);
+		}
+
+		#lovable-badge-cta:active {
+			transform: scale(0.98);
+		}
+
+		#lovable-badge-cta:focus {
+			outline: none;
+		}
+
+		#lovable-badge-cta:focus-visible {
+			outline: var(--focus-width) solid var(--focus-color);
+			outline-offset: var(--focus-offset);
+			z-index: 1;
+		}
+
+		#lovable-badge-text {
+			line-height: 1;
+		}
+
+		#lovable-badge-divider {
+			width: 1px;
+			height: 24px;
+			background-color: rgba(255, 255, 255, 0.04);
+			flex-shrink: 0;
+		}
+
+		#lovable-badge-close {
+			width: 24px;
+			height: 24px;
+			min-width: 24px;
+			min-height: 24px;
+			cursor: pointer;
+			background: none;
+			border: none;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+			flex-shrink: 0;
+			transition:
+				background-color var(--badge-transition-duration) ease,
+				transform 0.1s ease;
+		}
+
+		#lovable-badge-close:hover {
+			background: rgba(255, 255, 255, 0.04);
+		}
+
+		#lovable-badge-close:active {
+			transform: scale(0.92);
+		}
+
+		#lovable-badge-close:focus {
+			outline: none;
+		}
+
+		#lovable-badge-close:focus-visible {
+			outline: var(--focus-width) solid var(--focus-color);
+			outline-offset: calc(var(--focus-offset) * -1);
+			z-index: 1;
+		}
+
+		#lovable-badge-close svg path {
+			fill: var(--badge-text);
+			transition: fill var(--badge-transition-duration) ease;
+		}
+
+		#lovable-badge-close:hover svg path {
+			fill: var(--badge-text-hover);
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+
+			#lovable-badge-cta,
+			#lovable-badge-close,
+			#lovable-badge-close svg path {
+				transition: none;
+			}
+
+			#lovable-badge-cta:active,
+			#lovable-badge-close:active {
+				transform: none;
+			}
+		}
+
+		@media (prefers-contrast: high) {
+			#lovable-badge {
+				--badge-bg: #000;
+				--badge-text: #fff;
+				--badge-text-hover: #fff;
+				border: 2px solid currentColor;
+			}
+
+			#lovable-badge-cta:focus-visible,
+			#lovable-badge-close:focus-visible {
+				outline-width: 3px;
+			}
+		}
+	</style>
+	
+	<meta name="twitter:title" content="Ghanem — Creative Visual Artist">
+	<meta name="twitter:description"
+		content="Premium portfolio: branding, motion, editorial, video editing and visual art.">
+	<meta property="og:image"
+		content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba20afa-d25c-4357-8bd7-634d0d1d2da0/id-preview-e5d92730--38c282a8-b2e3-453c-86be-0f8be934731c.lovable.app-1783366263408.png">
+	<meta name="twitter:image"
+		content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba20afa-d25c-4357-8bd7-634d0d1d2da0/id-preview-e5d92730--38c282a8-b2e3-453c-86be-0f8be934731c.lovable.app-1783366263408.png">
+</head>
+
+<body class="bg-background text-foreground antialiased">
+	<div class="flex min-h-screen flex-col">
+		<header class="fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-transparent py-5">
+			<div class="mx-auto flex max-w-7xl items-center justify-between px-6"><div>
+              <img src="assets/images/logo design.png" width="60" />
+<a>Gha<span class="text-gradient">nem</span></a>			</div>	
+				<nav class="hidden items-center gap-1 md:flex"><a href="index.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">Home<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground text-foreground"
+						href="portfolio.html" data-status="active" aria-current="page">Portfolio<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						href="projects.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">Projects<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						href="services.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">Services<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						href="about.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">About<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						href="testimonials.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">Testimonials<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a><a
+						href="contact.html"
+						class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground">Contact<span
+							class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
+				</nav><a href="contact.html"
+					class="hidden rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.03] md:inline-flex">Let&#x27;s
+					talk</a><button
+					class="grid h-10 w-10 place-items-center rounded-full border border-white/10 md:hidden"
+					aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+						<path d="M4 5h16"></path>
+						<path d="M4 12h16"></path>
+						<path d="M4 19h16"></path>
+					</svg></button>
+			</div>
+		</header>
+		<main class="flex-1"><!--$-->
+			<section class="relative overflow-hidden pt-40 pb-20">
+				<div class="pointer-events-none absolute inset-0 -z-10 opacity-70"
+					style="background:var(--gradient-hero)"></div>
+				<div class="mx-auto max-w-7xl px-6">
+					<div class="animate-fade-up">
+						<div class="max-w-3xl">
+							<p
+								class="mb-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+								<span class="inline-block h-px w-6 bg-primary"></span>Portfolio</p>
+							<h2
+								class="font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+								Work I&#x27;m <span class="text-gradient">proud of.</span></h2>
+							<p class="mt-5 text-base text-muted-foreground sm:text-lg">A curated selection across every
+								category I practice — filter to explore.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mx-auto max-w-7xl px-6 pb-32">
+				<div class="flex flex-wrap gap-2"><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-primary bg-primary text-primary-foreground">All</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Graphic
+						Design</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Poster
+						Design</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Branding</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Social
+						Media</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Video
+						Editing</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Motion
+						Graphics</button><button
+						class="rounded-full border px-4 py-2 text-xs font-medium tracking-wide transition-all border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Photo
+						Manipulation</button></div>
+				<div class="mt-12">
+					<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+						<div class="animate-fade-up" style="animation-delay:0ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/5.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:60ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div
+										class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+<img src="assets/images/6.jpg" class="h-full w-full object-cover" alt="Poster">
+									</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:120ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/7.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis
+</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:180ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/2.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media </div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis
+</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:240ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/3.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.
+
+</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:300ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/4.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis
+</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/1.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2024</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Channel AG Analysis</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:420ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/10.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:480ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[16/9] overflow-hidden">
+									<div class="relative aspect-square overflow-hidden">
+    <div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+        <img src="assets/images/11.jpg" class="h-full w-full object-cover" alt="توقع واكسب - Codekick Academy">
+    </div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:540ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/12.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:600ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/13.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:660ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[3/2] overflow-hidden">
+									<div class="relative aspect-square overflow-hidden">
+    <div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+        <img src="assets/images/14.jpg" class="h-full w-full object-cover" alt="Codekick Academy">
+    </div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Photo Manipulation</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:540ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[1/1] overflow-hidden">
+									<div class="relative aspect-square overflow-hidden">
+    <div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+        <img src="assets/images/15.jpg" class="h-full w-full object-cover" alt="Codekick Academy - خلية يصنع التكنولوجيا">
+    </div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:540ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[1/1] overflow-hidden">
+									<div class="relative aspect-square overflow-hidden">
+    <div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+        <img src="assets/images/16.jpg" class="h-full w-full object-cover" alt="Codekick Academy - خلية يصنع التكنولوجيا">
+    </div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:540ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[1/1] overflow-hidden">
+									<div class="relative aspect-square overflow-hidden">
+    <div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+        <img src="assets/images/17.jpg" class="h-full w-full object-cover" alt="Codekick Academy - خلية يصنع التكنولوجيا">
+    </div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy
+
+									</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+									</div>
+								</div>
+							</article>
+						</div>
+<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/18.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Codekick Academy is an educational platform specializing in providing programming and training courses, in addition to providing outstanding sports content.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span>
+								</div>
+							</article>
+						</div>
+
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/100.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/200.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/300.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/400.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/500.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/99.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/97.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+												<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/25.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+																<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/20.jpg" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" alt="Mr Ezat Ghanem - Math Teacher">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/24.jpg" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" alt="Mr Ezat Ghanem - Math Teacher">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/22.jpg" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" alt="Mr Ezat Ghanem - Math Teacher">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Social Media</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Math Teatcher</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a Mr Ezat Math Teatcher.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster Design</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span></div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Ai.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Ai Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										<span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Ai
+</span></div>
+								</div>
+							</article>
+						</div>
+										<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 2 .mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 1.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 3.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 4.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 5.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 6.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Real 7.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">CodeKick Academy | Real Video</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Social media design for a channel specializing in financial markets.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <video src="assets/images/Comp 2.mp4" class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" autoplay loop muted playsinline></video>
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Video Editing</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Real Video ( YouTuber )</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">A short video edited by me for a YouTuber talking about the Sigma platform.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Premiere
+</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe After Effect</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Davinci Resolve</span>
+										</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/333.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Poster Design</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Industrial Technical Institute in Matareya ( حفلة التخرج )</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Design for the graduation ceremony of the Industrial Technical Institute in Matareya.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Poster</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Fine
+											Art</span></div>
+								</div>
+							</article>
+						</div>
+						<div class="animate-fade-up" style="animation-delay:360ms">
+							<article
+								class="hover-lift group relative overflow-hidden rounded-3xl border border-white/5 bg-card">
+								<div class="relative aspect-[4/5] overflow-hidden">
+									<div class="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+    <img src="assets/images/222.jpg" class="h-full w-full object-cover" alt="Poster">
+</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent">
+									</div>
+									<div
+										class="absolute left-5 top-5 flex items-center gap-2 rounded-full glass px-3 py-1.5 text-[11px] font-medium tracking-wide">
+										Poster Design</div>
+									<div class="absolute right-5 top-5 text-xs text-white/70">2026</div>
+									<div
+										class="absolute inset-x-5 bottom-5 flex translate-y-2 items-center gap-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+										<button
+											class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md hover:bg-white/20"><svg
+												xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+												aria-hidden="true">
+												<path
+													d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+												</path>
+												<circle cx="12" cy="12" r="3"></circle>
+											</svg> Preview</button><button
+											class="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-[color-mix(in_oklab,var(--primary)_85%,white)]">Case
+											study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round"
+												class="lucide lucide-arrow-up-right" aria-hidden="true">
+												<path d="M7 7h10v10"></path>
+												<path d="M7 17 17 7"></path>
+											</svg></button></div>
+								</div>
+								<div class="p-6">
+									<h3 class="font-display text-xl font-semibold leading-tight">Industrial Technical Institute in Matareya ( حفلة التخرج )</h3>
+									<p class="mt-2 line-clamp-2 text-sm text-muted-foreground">Design for the graduation ceremony of the Industrial Technical Institute in Matareya.</p>
+									<div class="mt-4 flex flex-wrap gap-1.5"><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">poster</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Adobe Photoshope</span><span
+											class="rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-muted-foreground">Fine
+											Art</span></div>
+								</div>
+							</article>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<script>(function (a, f) { let l; try { l = JSON.parse(sessionStorage.getItem(a) || "{}") } catch { return } const n = l?.[f || history.state?.__TSR_key]; let c = !1; for (const t in n) { const e = n[t], o = e?.scrollX, s = e?.scrollY; if (Number.isFinite(o) && Number.isFinite(s)) { if (t === "window") scrollTo(o, s), c = !0; else if (t) try { const r = document.querySelector(t); r && (r.scrollLeft = o, r.scrollTop = s) } catch { } } } if (c) return; const i = location.hash.slice(1); if (i) { const t = history.state?.__hashScrollIntoViewOptions ?? !0; if (t) { const e = document.getElementById(i); e && e.scrollIntoView(t) } return } scrollTo(0, 0) })("tsr-scroll-restoration-v1_3"); document.currentScript.remove()</script>
+			<!--/$-->
+		</main>
+		<footer class="relative mt-32 border-t border-white/5 bg-[oklch(0.15_0_0)]">
+			<div class="mx-auto max-w-7xl px-6 py-20">
+				<div class="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+					<div>
+						<h3 class="font-display text-3xl font-semibold">Let&#x27;s craft something <span
+								class="text-gradient">unforgettable.</span></h3>
+						<p class="mt-4 max-w-sm text-sm text-muted-foreground"> Available for select projects worldwide.
+							Currently booking Q3 &amp; Q4.</p><a href="contact.html"
+							class="mt-6 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:scale-[1.03]"><svg
+								xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
+								<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+								<rect x="2" y="4" width="20" height="16" rx="2"></rect>
+							</svg> Start a project</a>
+					</div>
+					<div>
+						<p class="mb-4 text-xs uppercase tracking-widest text-muted-foreground">Studio</p>
+						<ul class="space-y-2 text-sm">
+							<li><a href="about.html"
+									class="text-foreground/80 transition-colors hover:text-primary">About</a></li>
+							<li><a href="services.html"
+									class="text-foreground/80 transition-colors hover:text-primary">Services</a></li>
+							<li><a href="testimonials.html"
+									class="text-foreground/80 transition-colors hover:text-primary">Testimonials</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p class="mb-4 text-xs uppercase tracking-widest text-muted-foreground">Work</p>
+						<ul class="space-y-2 text-sm">
+							<li><a class="text-foreground/80 transition-colors hover:text-primary active"
+									href="portfolio.html" data-status="active" aria-current="page">Portfolio</a></li>
+							<li><a href="projects.html"
+									class="text-foreground/80 transition-colors hover:text-primary">Projects</a></li>
+							<li><a href="contact.html"
+									class="text-foreground/80 transition-colors hover:text-primary">Contact</a></li>
+						</ul>
+					</div>
+					
+						
+						<div>
+						<p class="mb-4 text-xs uppercase tracking-widest text-muted-foreground">Whatsapp</p>
+						<a href="">
+                          01011573963
+					    </a>
+					</div>
+					
+				</div>
+				<div
+					class="mt-16 flex flex-col justify-between gap-4 border-t border-white/5 pt-8 text-xs text-muted-foreground md:flex-row">
+					<p>© <!-- -->2026<!-- --> Ghanem Studio. All rights reserved.</p>
+					<p>Designed &amp; built with care.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script class="$tsr"
+		id="$tsr-stream-barrier">(self.$R = self.$R || {})["tsr"] = []; self.$_TSR = { h() { this.hydrated = !0, this.c() }, e() { this.streamEnded = !0, this.c() }, c() { this.hydrated && this.streamEnded && (delete self.$_TSR, delete self.$R.tsr) }, p(e) { this.initialized ? e() : this.buffer.push(e) }, buffer: [] }; $_TSR.router = ($R => $R[0] = { manifest: $R[1] = { routes: $R[2] = { __root__: $R[3] = { preloads: $R[4] = ["/assets/index-eiRlS7zx.js", "/assets/utils-B3D6xD1T.js"], scripts: $R[5] = [$R[6] = { attrs: $R[7] = { type: "module", async: !0, src: "/assets/index-eiRlS7zx.js" } }] }, "/portfolio": $R[8] = { preloads: $R[9] = ["/assets/portfolio-Bgvk9Hz9.js", "/assets/ProjectCard-BYIsAR_n.js", "/assets/ProjectGrid-DvwWzbsu.js", "/assets/PageHero-CN2HiELr.js"] } } }, matches: $R[10] = [$R[11] = { i: "__root__ ", u: 1783528350281, s: "success", ssr: !0 }, $R[12] = { i: " portfolio portfolio", u: 1783528350281, s: "success", ssr: !0 }], lastMatchId: " portfolio portfolio" })($R["tsr"]); $_TSR.e(); document.currentScript.remove()</script>
+	<script type="module" async="" src="assets/index-eiRlS7zx.js"></script>
+	
+
+</body>
+
+</html>

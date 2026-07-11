@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      data-precedence="default"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/styles-CzmBpTmZ.css"
+      data-precedence="default"
+    />
+    <title>About — Ghanem</title>
+    <meta name="author" content="Ghanem" />
+    <meta property="og:title" content="Ghanem — Creative Visual Artist" />
+    <meta
+      property="og:description"
+      content="Premium portfolio: branding, motion, editorial, video editing and visual art."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="description"
+      content="About Ghanem — designer, editor, and visual artist."
+    />
+    <link rel="modulepreload" href="assets/index-eiRlS7zx.js" />
+    <link rel="modulepreload" href="assets/utils-B3D6xD1T.js" />
+    <link rel="modulepreload" href="assets/about-0Kwq5yt6.js" />
+    <link rel="modulepreload" href="assets/PageHero-CN2HiELr.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/images/logo design.png" type="image/png" />
+    <style>
+      @font-face {
+        font-family: "CameraPlainVariable";
+        src: url("https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2")
+          format("woff2");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      #lovable-badge {
+        --badge-bg: #1b1b1b;
+        --badge-text: #c5c1b9;
+        --badge-text-hover: #dcdad5;
+        --badge-radius: 6px;
+        --badge-padding: 8px;
+        --badge-gap: 6px;
+        --badge-shadow:
+          0 0 0 1px rgba(0, 0, 0, 0.88), 0 1px 0 0 rgba(0, 0, 0, 0.04),
+          0 2px 2px -1px rgba(0, 0, 0, 0.08),
+          0 4px 4px -2px rgba(0, 0, 0, 0.08),
+          0 8px 8px -4px rgba(0, 0, 0, 0.08),
+          0 16px 16px -8px rgba(0, 0, 0, 0.08);
+        --badge-transition-duration: 0.2s;
+        --badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+        --focus-color: #575ecf;
+        --focus-offset: 2px;
+        --focus-width: 2px;
+
+        position: fixed;
+        bottom: 12px;
+        right: 12px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        z-index: 1000000;
+        background-color: var(--badge-bg) !important;
+        color: var(--badge-text) !important;
+        border-radius: var(--badge-radius);
+        box-shadow: var(--badge-shadow) !important;
+        font-size: 12px;
+        font-family:
+          CameraPlainVariable,
+          "CameraPlainVariable Fallback",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        font-feature-settings: normal !important;
+        transform: translateZ(0);
+        will-change: transform, opacity;
+      }
+
+      #lovable-badge-cta {
+        display: flex;
+        align-items: center;
+        gap: var(--badge-gap);
+        padding: 0 var(--badge-padding);
+        height: 100%;
+        color: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+        transition:
+          background-color var(--badge-transition-duration) ease,
+          color var(--badge-transition-duration) ease,
+          transform 0.1s ease;
+      }
+
+      #lovable-badge-cta:hover {
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--badge-text-hover);
+      }
+
+      #lovable-badge-cta:active {
+        transform: scale(0.98);
+      }
+
+      #lovable-badge-cta:focus {
+        outline: none;
+      }
+
+      #lovable-badge-cta:focus-visible {
+        outline: var(--focus-width) solid var(--focus-color);
+        outline-offset: var(--focus-offset);
+        z-index: 1;
+      }
+
+      #lovable-badge-text {
+        line-height: 1;
+      }
+
+      #lovable-badge-divider {
+        width: 1px;
+        height: 24px;
+        background-color: rgba(255, 255, 255, 0.04);
+        flex-shrink: 0;
+      }
+
+      #lovable-badge-close {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        min-height: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+        flex-shrink: 0;
+        transition:
+          background-color var(--badge-transition-duration) ease,
+          transform 0.1s ease;
+      }
+
+      #lovable-badge-close:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      #lovable-badge-close:active {
+        transform: scale(0.92);
+      }
+
+      #lovable-badge-close:focus {
+        outline: none;
+      }
+
+      #lovable-badge-close:focus-visible {
+        outline: var(--focus-width) solid var(--focus-color);
+        outline-offset: calc(var(--focus-offset) * -1);
+        z-index: 1;
+      }
+
+      #lovable-badge-close svg path {
+        fill: var(--badge-text);
+        transition: fill var(--badge-transition-duration) ease;
+      }
+
+      #lovable-badge-close:hover svg path {
+        fill: var(--badge-text-hover);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #lovable-badge-cta,
+        #lovable-badge-close,
+        #lovable-badge-close svg path {
+          transition: none;
+        }
+
+        #lovable-badge-cta:active,
+        #lovable-badge-close:active {
+          transform: none;
+        }
+      }
+
+      @media (prefers-contrast: high) {
+        #lovable-badge {
+          --badge-bg: #000;
+          --badge-text: #fff;
+          --badge-text-hover: #fff;
+          border: 2px solid currentColor;
+        }
+
+        #lovable-badge-cta:focus-visible,
+        #lovable-badge-close:focus-visible {
+          outline-width: 3px;
+        }
+      }
+    </style>
+    <script defer src="~flock.js" data-proxy-url="/~api/analytics"></script>
+    <script
+      defer
+      src="__l5e/events.js"
+      data-artifact-kind="dwl_content_hash"
+      data-artifact-id="a3349b292d62fb80f4f13d4b765e3a4b04d038b20d41ea56774b46f12976561b"
+      data-commit-sha="abcfb2f3aecbce87673eaf300d4b55a167a29b0a"
+      data-context-token="v1.eyJwcm9qZWN0X2lkIjoiMzhjMjgyYTgtYjJlMy00NTNjLTg2YmUtMGY4YmU5MzQ3MzFjIiwiYXJ0aWZhY3Rfa2luZCI6ImR3bF9jb250ZW50X2hhc2giLCJhcnRpZmFjdF9pZCI6ImEzMzQ5YjI5MmQ2MmZiODBmNGYxM2Q0Yjc2NWUzYTRiMDRkMDM4YjIwZDQxZWE1Njc3NGI0NmYxMjk3NjU2MWIiLCJjb21taXRfc2hhIjoiYWJjZmIyZjNhZWNiY2U4NzY3M2VhZjMwMGQ0YjU1YTE2N2EyOWIwYSIsImV4cCI6MTc4MzUzMTk1MH0.RQ6EVFkx-6CAzR6bWvTkT74QV-NMm-hesr8XomLJYSA"
+    ></script>
+    <meta name="twitter:title" content="Aria Vale — Creative Visual Artist" />
+    <meta
+      name="twitter:description"
+      content="Premium portfolio: branding, motion, editorial, video editing and visual art."
+    />
+    <meta
+      property="og:image"
+      content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba20afa-d25c-4357-8bd7-634d0d1d2da0/id-preview-e5d92730--38c282a8-b2e3-453c-86be-0f8be934731c.lovable.app-1783366263408.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba20afa-d25c-4357-8bd7-634d0d1d2da0/id-preview-e5d92730--38c282a8-b2e3-453c-86be-0f8be934731c.lovable.app-1783366263408.png"
+    />
+  </head>
+  <body class="bg-background text-foreground antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header
+        class="fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-transparent py-5"
+      >
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+<div>
+              <img src="assets/images/logo design.png" width="60" />
+<a>Gha<span class="text-gradient">nem</span></a>
+			</div>	          <nav class="hidden items-center gap-1 md:flex">
+            <a
+              href="index.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Home<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              href="portfolio.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Portfolio<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              href="projects.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Projects<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              href="services.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Services<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground text-foreground"
+              href="about.html"
+              data-status="active"
+              aria-current="page"
+              >About<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              href="testimonials.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Testimonials<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span></a
+            ><a
+              href="contact.html"
+              class="group relative px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >Contact<span
+                class="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-primary to-primary-glow transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+              ></span
+            ></a>
+          </nav>
+          <a
+            href="contact.html"
+            class="hidden rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.03] md:inline-flex"
+            >Let&#x27;s talk</a
+          ><button
+            class="grid h-10 w-10 place-items-center rounded-full border border-white/10 md:hidden"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 19h16"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main class="flex-1">
+        <!--$-->
+        <section class="relative overflow-hidden pt-40 pb-20">
+          <div
+            class="pointer-events-none absolute inset-0 -z-10 opacity-70"
+            style="background: var(--gradient-hero)"
+          ></div>
+          <div class="mx-auto max-w-7xl px-6">
+            <div class="animate-fade-up">
+              <div class="max-w-3xl">
+                <p
+                  class="mb-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-muted-foreground"
+                >
+                  <span class="inline-block h-px w-6 bg-primary"></span>About
+                </p>
+                <h2
+                  class="font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
+                >
+                  Independent designer,<br /><span class="text-gradient"
+                    >quietly obsessive.</span
+                  >
+                </h2>
+                <p class="mt-5 text-base text-muted-foreground sm:text-lg">
+                  Eight years designing across print, screen and motion —
+                  currently based in Lisbon, working worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mx-auto max-w-7xl px-6 pb-24">
+          <div class="grid gap-16 lg:grid-cols-[1.2fr_1fr]">
+            <div class="space-y-6 text-lg leading-relaxed text-foreground/85">
+              <p>
+                I&#x27;m Ahmed Ezat — a graphic designer, video editor and visual
+                artist. My work sits at the intersection of editorial precision,
+                cinematic pace, and playful, sometimes surreal, visual language.
+              </p>
+              <p>
+                I partner with founders, in-house teams and agencies who care
+                about craft. Every engagement is small, senior and deeply
+                hands-on — no juniors, no handoffs, no diluted decisions.
+              </p>
+              <p>
+                When I&#x27;m not designing, you&#x27;ll find me shooting 35mm,
+                digging through record crates, or scoring bad TV shows just to
+                see if the edit can be saved.
+              </p>
+            </div>
+            <aside class="rounded-3xl border border-white/5 bg-card p-8">
+              <h4
+                class="text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                Toolbox
+              </h4>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Adobe Photoshope</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Adobe Primiere</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Adobe After Effects</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Adobe Illustrator</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Adobe Indesign</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Capcut</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >DaVinci Resolve</span
+                ><span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Canva</span
+                >
+				<span
+                  class="rounded-full border border-white/10 px-3 py-1 text-xs"
+                  >Ai Tools</span
+                >
+              </div>
+              <h4
+                class="mt-10 text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                Recognition
+              </h4>
+              <ul class="mt-4 space-y-2 text-sm text-foreground/85">
+                <li>Awwwards Site of the Day — 2×</li>
+                <li>Communication Arts Feature — 2024</li>
+                <li>It&#x27;s Nice That — Selected Work</li>
+                <li>Brand New — Noted</li>
+              </ul>
+            </aside>
+          </div>
+          <div class="mt-28">
+            <h3 class="font-display text-3xl font-semibold sm:text-4xl">
+              Timeline
+            </h3>
+            <div class="mt-10 divide-y divide-white/5 border-y border-white/5">
+              <div
+                class="grid gap-4 py-6 md:grid-cols-[120px_180px_1fr] md:items-baseline"
+              >
+                <div class="font-display text-2xl font-semibold text-primary">
+                  2026
+                </div>
+                <div class="text-sm font-medium">Independent studio</div>
+                <p class="text-muted-foreground">
+                  Directing brand and motion work for clients CodeKick Academy
+              </div>
+              <div
+                class="grid gap-4 py-6 md:grid-cols-[120px_180px_1fr] md:items-baseline"
+              >
+                <div class="font-display text-2xl font-semibold text-primary">
+                  2025
+                </div>
+                <div class="text-sm font-medium">Senior Designer, Prism</div>
+                <p class="text-muted-foreground">
+                  Led brand + motion identity for a streaming platform&#x27;s
+                  global refresh.
+                </p>
+              </div>
+              <div
+                class="grid gap-4 py-6 md:grid-cols-[120px_180px_1fr] md:items-baseline"
+              >
+                <div class="font-display text-2xl font-semibold text-primary">
+                  2024
+                </div>
+                <div class="text-sm font-medium">Designer, Field Studio</div>
+                <p class="text-muted-foreground">
+                  Editorial, packaging and campaign work for lifestyle &amp;
+                  culture brands.
+                </p>
+              </div>
+              <div
+                class="grid gap-4 py-6 md:grid-cols-[120px_180px_1fr] md:items-baseline"
+              >
+                <div class="font-display text-2xl font-semibold text-primary">
+                  2023
+                </div>
+                <div class="text-sm font-medium">BA Visual Communication</div>
+                <p class="text-muted-foreground">
+                  Graduated with distinction. Focus on editorial systems and
+                  moving image.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          (function (a, f) {
+            let l;
+            try {
+              l = JSON.parse(sessionStorage.getItem(a) || "{}");
+            } catch {
+              return;
+            }
+            const n = l?.[f || history.state?.__TSR_key];
+            let c = !1;
+            for (const t in n) {
+              const e = n[t],
+                o = e?.scrollX,
+                s = e?.scrollY;
+              if (Number.isFinite(o) && Number.isFinite(s)) {
+                if (t === "window") (scrollTo(o, s), (c = !0));
+                else if (t)
+                  try {
+                    const r = document.querySelector(t);
+                    r && ((r.scrollLeft = o), (r.scrollTop = s));
+                  } catch {}
+              }
+            }
+            if (c) return;
+            const i = location.hash.slice(1);
+            if (i) {
+              const t = history.state?.__hashScrollIntoViewOptions ?? !0;
+              if (t) {
+                const e = document.getElementById(i);
+                e && e.scrollIntoView(t);
+              }
+              return;
+            }
+            scrollTo(0, 0);
+          })("tsr-scroll-restoration-v1_3");
+          document.currentScript.remove();
+        </script>
+        <!--/$-->
+      </main>
+      <footer
+        class="relative mt-32 border-t border-white/5 bg-[oklch(0.15_0_0)]"
+      >
+        <div class="mx-auto max-w-7xl px-6 py-20">
+          <div class="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+            <div>
+              <h3 class="font-display text-3xl font-semibold">
+                Let&#x27;s craft something
+                <span class="text-gradient">unforgettable.</span>
+              </h3>
+              <p class="mt-4 max-w-sm text-sm text-muted-foreground">
+                 Available for select projects worldwide. Currently booking Q3
+                &amp; Q4.
+              </p>
+              <a
+                href="contact.html"
+                class="mt-6 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:scale-[1.03]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail"
+                  aria-hidden="true"
+                >
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                </svg>
+                Start a project</a
+              >
+            </div>
+            <div>
+              <p
+                class="mb-4 text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                Studio
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    class="text-foreground/80 transition-colors hover:text-primary active"
+                    href="about.html"
+                    data-status="active"
+                    aria-current="page"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-foreground/80 transition-colors hover:text-primary"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="testimonials.html"
+                    class="text-foreground/80 transition-colors hover:text-primary"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                class="mb-4 text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                Work
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="text-foreground/80 transition-colors hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="projects.html"
+                    class="text-foreground/80 transition-colors hover:text-primary"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-foreground/80 transition-colors hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                class="mb-4 text-xs uppercase tracking-widest text-muted-foreground"
+              >
+               Whatsapp
+              </p>
+              <h1>
+				01011573963
+			  </h1>
+            </div>
+          </div>
+          <div
+            class="mt-16 flex flex-col justify-between gap-4 border-t border-white/5 pt-8 text-xs text-muted-foreground md:flex-row"
+          >
+            <p>
+              ©
+              <!-- -->2026<!-- -->
+              Ghanem Studio. All rights reserved.
+            </p>
+            <p>Designed &amp; built with care.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script class="$tsr" id="$tsr-stream-barrier">
+      (self.$R = self.$R || {})["tsr"] = [];
+      self.$_TSR = {
+        h() {
+          ((this.hydrated = !0), this.c());
+        },
+        e() {
+          ((this.streamEnded = !0), this.c());
+        },
+        c() {
+          this.hydrated &&
+            this.streamEnded &&
+            (delete self.$_TSR, delete self.$R.tsr);
+        },
+        p(e) {
+          this.initialized ? e() : this.buffer.push(e);
+        },
+        buffer: [],
+      };
+      $_TSR.router = (($R) =>
+        ($R[0] = {
+          manifest: ($R[1] = {
+            routes: ($R[2] = {
+              __root__: ($R[3] = {
+                preloads: ($R[4] = [
+                  "/assets/index-eiRlS7zx.js",
+                  "/assets/utils-B3D6xD1T.js",
+                ]),
+                scripts: ($R[5] = [
+                  ($R[6] = {
+                    attrs: ($R[7] = {
+                      type: "module",
+                      async: !0,
+                      src: "/assets/index-eiRlS7zx.js",
+                    }),
+                  }),
+                ]),
+              }),
+              "/about": ($R[8] = {
+                preloads: ($R[9] = [
+                  "/assets/about-0Kwq5yt6.js",
+                  "/assets/PageHero-CN2HiELr.js",
+                ]),
+              }),
+            }),
+          }),
+          matches: ($R[10] = [
+            ($R[11] = {
+              i: "__root__ ",
+              u: 1783528350409,
+              s: "success",
+              ssr: !0,
+            }),
+            ($R[12] = {
+              i: " about about",
+              u: 1783528350409,
+              s: "success",
+              ssr: !0,
+            }),
+          ]),
+          lastMatchId: " about about",
+        }))($R["tsr"]);
+      $_TSR.e();
+      document.currentScript.remove();
+    </script>
+    <script type="module" async="" src="assets/index-eiRlS7zx.js"></script>
+
+    <script>
+      // Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+      if (
+        window.self !== window.top ||
+        navigator.userAgent.includes("puppeteer")
+      ) {
+        var badge = document.getElementById("lovable-badge");
+        if (badge) {
+          badge.style.display = "none";
+        }
+      }
+
+      // Add click event listener to close button with animation
+      var closeButton = document.getElementById("lovable-badge-close");
+      if (closeButton) {
+        closeButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var badge = document.getElementById("lovable-badge");
+          if (badge) {
+            badge.classList.add("closing");
+            setTimeout(function () {
+              if (badge) {
+                badge.style.display = "none";
+              }
+            }, 240);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
